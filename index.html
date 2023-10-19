@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class=" text-xl leading-8 bg-black text-white h-screen">
   <header class="bg-white text-black">
     <nav class="flex justify-around items-center w-[90%] mx-auto">
-      <div class="md:static absolute bg-white md:min-f-fit min-h-[10vh] left-0 top-[0] w-full flex items-center justify-around">
+      <div class="md:static absolute bg-white md:min-f-fit min-h-[10vh] left-0 top-[-100%] w-full flex items-center justify-around">
         <ul class="flex md:flex-row flex-col  md:items-center md:gap-[10vw] gap-12">
           <li>
             <a class="hover:text-sky-400" href="#">Home</a>
@@ -25,12 +27,14 @@
             <a class="hover:text-sky-400" href="#">Contact Us</a>
           </li>
         </ul>
-
+      </div>
+      <div class="flex items-center">
+        <ion-icon name="menu" class="flex text-5xl cursor-pointer bg-white p-2"></ion-icon>
       </div>
     </nav>
 
   </header>
-  <p class="block m-auto max-w-[50ch] mt-[10rem] md:top-[10px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor, necessitatibus animi nobis voluptatum temporibus, ex aliquid voluptas error molestiae, cumque in pariatur deleniti debitis accusamus! Officiis ipsa dolore minus.
+  <p class="block m-auto max-w-[50ch] mt-[5rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor, necessitatibus animi nobis voluptatum temporibus, ex aliquid voluptas error molestiae, cumque in pariatur deleniti debitis accusamus! Officiis ipsa dolore minus.
   </p>
   
 </body>
