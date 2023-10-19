@@ -7,7 +7,8 @@
   <title>Tailwind</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
 </head>
 <body class=" text-xl leading-8 bg-black text-white h-screen">
   <header class="bg-white text-black">
@@ -28,14 +29,20 @@
           </li>
         </ul>
       </div>
-      <div class="flex items-center">
-        <ion-icon name="menu" class="flex text-5xl cursor-pointer bg-white p-2"></ion-icon>
+      <div class="flex items-center md:hidden">
+        <ion-icon  onclick="Menu(this)" name="menu" class="flex text-5xl cursor-pointer bg-white p-2"></ion-icon>
       </div>
     </nav>
-
   </header>
   <p class="block m-auto max-w-[50ch] mt-[5rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor, necessitatibus animi nobis voluptatum temporibus, ex aliquid voluptas error molestiae, cumque in pariatur deleniti debitis accusamus! Officiis ipsa dolore minus.
   </p>
-  
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      
+      e.name === 'menu' ? e.name = "close" : e.menu = "menu"
+      
+    }
+  </script>
 </body>
 </html>
