@@ -31,20 +31,24 @@
       </li>
     </ul>
   </nav>
-  <main class="lg:text-3xl  mx-[5rem] m-[auto] text-white m-[2rem] lg:m-auto mt-[3rem] lg:mt-[5rem] max-w-[50ch] lg:m-[2rem]">
+  <main class="lg:text-3xl mx-[5rem] m-[auto] text-white m-[2rem] lg:max-w-[50ch] lg:m-auto mt-[3rem] lg:mt-[5rem] lg:m-[2rem]">
     <p> 
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem, cumque laudantium sint, excepturi quos reprehenderit sequi at est sunt distinctio? Exercitationem eligendi cum tempora rerum voluptate nihil aut voluptates.
     </p>
-    <div>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <div class="p-5 lg:p-10">
+      <div class="columns-2 lg:columns-4 scale-100">
+        <img src="https://picsum.photos/id/2/200/" alt="">
+        <img src="https://picsum.photos/id/7/200/" alt="">
+        <img src="https://picsum.photos/id/10/200/" alt="">
+        <img src="https://picsum.photos/id/250/200/" alt="">
+        <img src="https://picsum.photos/id/100/200/" alt="">
+        <img src="https://picsum.photos/id/67/200/" alt="">
+        <img src="https://picsum.photos/id/69/200/" alt="">
+        <img src="https://picsum.photos/id/120/200/" alt="">
+        <img src="https://picsum.photos/id/50/200/" alt="">
+        <img src="https://picsum.photos/id/47/200/" alt="">
+        <img src="https://picsum.photos/id/96/200/" alt="">
+      </div>
     </div>
   </main>
 
@@ -53,7 +57,7 @@
       /* TO be able to pull down the menu when user clicks*/
       let list = document.querySelector('ul');
 
-      e.name == 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu" ,list.classList.remove('top-[80px]'), list.classList.remove('opacity - 0'))
+      e.name == 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu" ,list.classList.remove('top-[80px]'), list.classList.remove('opacity-0'))
     }
   </script>
 </body>
