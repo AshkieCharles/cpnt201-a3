@@ -4,7 +4,8 @@
 - [Icons](https://ionic.io/ionicons/usage#menu)
 - [img-nthchild](https://stackoverflow.com/a/26924507)
 ### Pseudo Classes
+Some of the classes I used in the project.
 - hover:
-- first[first-child]
+- first:
 - active:
 - first:
